@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width,
+    initial-scale=1.0">
+    <title>Login Form </title>
+    <link rel="stylesheet" href = "style.css"> 
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <script type="text/javascript">
+        function login()
+        {
+            var uname=document.getElementById("username").value;
+            var pass=document.getElementById("password").value;
+    
+            if(uname=="world" && pass=="123")
+            {
+              // location.assign("file:///C:/Users/prapt/OneDrive/Desktop/my%20project/page.html");
+                location.assign("C:\Users\prapt\OneDrive\Desktop\my project\page.html");
+                // window.alert("login pass");
+            }
+            else
+            {
+                window.alert("login failed");
+            }
+        }
+    </script>
+    
+    
+</head>
+
+ <body>
+    <div class = "wrapper"> 
+        <form action = "">
+            <h1>Login</h1>
+            <div class = "input-box">
+                <input type = "text"
+                name="text"
+                id="username" 
+                placeholder="Username"
+                required>
+                <box-icon type='solid' name='user'></box-icon>
+            </div>
+            <div class = "input-box">
+                <input type = "password"
+                name="text"
+                id="password"
+                 placeholder="Password"
+                required>
+                <box-icon type='solid' name='lock-open-alt'></box-icon>
+            </div>
+
+            <div class = "remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn" onclick="login()">Login</button>
+            <div class="register-link">
+                <p>Don't have an account?</p><a
+                 href="#">Register</a></p>
+            </div>
+        </form>
+    </div> 
+
+
+
+     
+ </body>
+
+ </html> 
